@@ -58,10 +58,16 @@ font-family:'Neue Haas Unica W01 Thi1492563';
   background-size: cover;
   background-position: center top;
   text-align: center; }
+  #corpLP a:focus, #corpLP button:focus {
+    text-decoration: none;
+    outline: 0; }
   #corpLP .navbar-default {
     background-color: rgba(1, 23, 52, 0.5);
     border: none;
     min-height: 80px; }
+    @media (max-width: 767px) {
+      #corpLP .navbar-default {
+        min-height: 65px; } }
     #corpLP .navbar-default .navbar-header {
       float: inherit;
       width: 100%;
@@ -69,6 +75,9 @@ font-family:'Neue Haas Unica W01 Thi1492563';
       margin: 0 auto !important; }
     #corpLP .navbar-default svg {
       width: 100%; }
+      @media (max-width: 767px) {
+        #corpLP .navbar-default svg {
+          width: 85%; } }
   #corpLP .container {
     max-width: 767px; }
   #corpLP .insideCnt {
@@ -110,7 +119,28 @@ font-family:'Neue Haas Unica W01 Thi1492563';
       letter-spacing: 5px;
       font-size: 12px;
       font-weight: 600;
-      margin-top: 20px; }
+      margin-top: 20px;
+      overflow: hidden; }
+      #corpLP .couponForm .btnLP:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.5); }
+      #corpLP .couponForm .btnLP:before {
+        position: absolute;
+        height: 100%;
+        font-size: 125%;
+        line-height: 3.5;
+        color: #fff;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        left: 70%;
+        opacity: 0;
+        top: -2.5px; }
+      #corpLP .couponForm .btnLP:hover:before {
+        left: 80%;
+        opacity: 1; }
+      #corpLP .couponForm .btnLP span {
+        font-family: 'Neue Haas Unica W01 Regular', sans-serif; }
   #corpLP hr {
     max-width: 50px;
     margin: 40px auto; }
