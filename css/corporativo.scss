@@ -124,8 +124,28 @@ font-family:'Neue Haas Unica W01 Thi1492563';
             input{
                 height: auto;
             }
+            a{
+                color: #ffffff;
+                font-weight: 800;
+                &:hover{
+                    color: #ffffff;
+
+                }
+            }
         }
-        .btnLP {
+        .alertRow{
+            text-align: left;
+            color: #ff6328;
+            font-style: italic;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    }
+    hr{
+        max-width: 50px;
+        margin: 40px auto;
+    }
+    .btnLP {
             background-color: transparent;
             border: 1px solid #FFFFFF;
             min-width: 200px;
@@ -160,10 +180,52 @@ font-family:'Neue Haas Unica W01 Thi1492563';
                 font-family: 'Neue Haas Unica W01 Regular', sans-serif;;
             }
         }
-    }
-    hr{
-        max-width: 50px;
-        margin: 40px auto;
+    #errorModal, #successModal{
+        .modal-content{
+            background-color: rgb(35, 60, 85);
+            border-radius: 0;
+            .close {
+                margin-top: -24px;
+                opacity: .8;
+                span {
+                    color: #fff;
+                    text-shadow: none;
+                    font-weight: 100;
+                }
+            }
+            .modal-header{
+                border-bottom:none;
+                padding-top: 35px;
+                h4{
+                    font-size: 18px;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    b{
+                        display: block;
+                        font-size: 25px;
+                    }
+                }
+                h3{
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+            .modal-body {
+                padding: 0 15px;
+                font-size: 12px;
+                b{
+                    font-size: 20px;
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            .modal-footer {
+                border-top: none;
+                text-align: center;
+                padding: 0 15px 35px;   
+            }
+        }
+        
     }
 }
 

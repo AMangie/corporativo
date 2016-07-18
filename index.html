@@ -44,11 +44,14 @@
                 <label for="email" class="sr-only">Correo Electrónico Corporativo</label>
                 <input type="email" class="form-control" id="email" placeholder="Correo Electrónico Corporativo">
               </div>
+              <div class="col-xs-12 alertRow">
+                <span><i class="glyphicon glyphicon-exclamation-sign"></i> El nombre o correo ingresado es incorrecto.</span>
+              </div>
               <div class="col-sm-6">
                 <div class="checkbox">
                   <label>
                     <input type="checkbox" value="">
-                    <span>He leído y acepto los Términos y Condiciones</span>
+                    <span>He leído y acepto los <a href="#">Términos y Condiciones</a></span>
                   </label>
                 </div>
               </div>
@@ -61,7 +64,7 @@
                 </div>
               </div>
               <div class="col-xs-12">
-                <button type="submit" class="btnLP glyphicon glyphicon-menu-right"><span>ENVIAR</span></button>
+                <button type="button" class="btnLP glyphicon glyphicon-menu-right" data-toggle="modal" data-target="#successModal"><span>ENVIAR</span></button>
               </div>
             </form>
             <hr>
@@ -69,6 +72,42 @@
         </div>
       </div>
     </section>
+    <!-- MODAL ÉXITO -->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="modalSuccess">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalSuccess"><b>¡Felicidades!</b></h4>
+            <h3 style="text-transform:uppercase;">Gracias por formar parte de nuestros socios corporativos</h3>
+          </div>
+          <div class="modal-body">
+            <p>Hemos enviado tu cupón a <b>ejemplo@ejemplo.com</b></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btnLP " data-toggle="modal" data-target="#errorModal"><span>ACEPTAR</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ERROR -->
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="modalError">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="modalError"><b>¡Lo sentimos!</b> Tu empresa no está registrada como socio</h4>
+            <h3>Tomaremos en cuenta tu solicitud para bla bla bla</h3>
+          </div>
+          <div class="modal-body">
+            <p>Te invitamos a ingresar a nuestro sitio y aprovechar las diferentes promociones que tenemos para tí. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium eros purus, at luctus diam commodo ac. Fusce tempus pharetra arcu, ac vehicula lacus sagittis ac.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btnLP " data-toggle="modal" data-target="#errorModal"><span>CONTINUAR</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

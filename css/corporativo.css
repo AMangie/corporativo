@@ -111,38 +111,83 @@ font-family:'Neue Haas Unica W01 Thi1492563';
       text-align: left; }
       #corpLP .couponForm .checkbox input {
         height: auto; }
-    #corpLP .couponForm .btnLP {
-      background-color: transparent;
-      border: 1px solid #FFFFFF;
-      min-width: 200px;
-      padding: 15px;
-      letter-spacing: 5px;
-      font-size: 12px;
-      font-weight: 600;
-      margin-top: 20px;
-      overflow: hidden; }
-      #corpLP .couponForm .btnLP:hover {
-        background: rgba(255, 255, 255, 0.2);
-        border-color: rgba(255, 255, 255, 0.5); }
-      #corpLP .couponForm .btnLP:before {
-        position: absolute;
-        height: 100%;
-        font-size: 125%;
-        line-height: 3.5;
-        color: #fff;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-        left: 70%;
-        opacity: 0;
-        top: -2.5px; }
-      #corpLP .couponForm .btnLP:hover:before {
-        left: 80%;
-        opacity: 1; }
-      #corpLP .couponForm .btnLP span {
-        font-family: 'Neue Haas Unica W01 Regular', sans-serif; }
+      #corpLP .couponForm .checkbox a {
+        color: #ffffff;
+        font-weight: 800; }
+        #corpLP .couponForm .checkbox a:hover {
+          color: #ffffff; }
+    #corpLP .couponForm .alertRow {
+      text-align: left;
+      color: #ff6328;
+      font-style: italic;
+      font-size: 13px;
+      margin-bottom: 10px; }
   #corpLP hr {
     max-width: 50px;
     margin: 40px auto; }
+  #corpLP .btnLP {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    min-width: 200px;
+    padding: 15px;
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+    overflow: hidden; }
+    #corpLP .btnLP:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.5); }
+    #corpLP .btnLP:before {
+      position: absolute;
+      height: 100%;
+      font-size: 125%;
+      line-height: 3.5;
+      color: #fff;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      left: 70%;
+      opacity: 0;
+      top: -2.5px; }
+    #corpLP .btnLP:hover:before {
+      left: 80%;
+      opacity: 1; }
+    #corpLP .btnLP span {
+      font-family: 'Neue Haas Unica W01 Regular', sans-serif; }
+  #corpLP #errorModal .modal-content, #corpLP #successModal .modal-content {
+    background-color: #233c55;
+    border-radius: 0; }
+    #corpLP #errorModal .modal-content .close, #corpLP #successModal .modal-content .close {
+      margin-top: -24px;
+      opacity: .8; }
+      #corpLP #errorModal .modal-content .close span, #corpLP #successModal .modal-content .close span {
+        color: #fff;
+        text-shadow: none;
+        font-weight: 100; }
+    #corpLP #errorModal .modal-content .modal-header, #corpLP #successModal .modal-content .modal-header {
+      border-bottom: none;
+      padding-top: 35px; }
+      #corpLP #errorModal .modal-content .modal-header h4, #corpLP #successModal .modal-content .modal-header h4 {
+        font-size: 18px;
+        font-weight: 100;
+        text-transform: uppercase; }
+        #corpLP #errorModal .modal-content .modal-header h4 b, #corpLP #successModal .modal-content .modal-header h4 b {
+          display: block;
+          font-size: 25px; }
+      #corpLP #errorModal .modal-content .modal-header h3, #corpLP #successModal .modal-content .modal-header h3 {
+        font-size: 14px;
+        margin-top: 10px; }
+    #corpLP #errorModal .modal-content .modal-body, #corpLP #successModal .modal-content .modal-body {
+      padding: 0 15px;
+      font-size: 12px; }
+      #corpLP #errorModal .modal-content .modal-body b, #corpLP #successModal .modal-content .modal-body b {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 20px; }
+    #corpLP #errorModal .modal-content .modal-footer, #corpLP #successModal .modal-content .modal-footer {
+      border-top: none;
+      text-align: center;
+      padding: 0 15px 35px; }
 
 /*# sourceMappingURL=corporativo.css.map */
